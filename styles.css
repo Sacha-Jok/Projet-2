@@ -1,0 +1,9 @@
+h1 {
+    color: rgb(89, 163, 141);
+ }
+h2 {
+    color: rgb(160, 160, 161);
+ }
+ header{
+    display: flex;
+ }
