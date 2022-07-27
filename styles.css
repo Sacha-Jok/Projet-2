@@ -1,9 +1,73 @@
-h1 {
-    color: rgb(89, 163, 141);
- }
-h2 {
-    color: rgb(160, 160, 161);
- }
- header{
-    display: flex;
- }
+body{
+   font-family: "Raleway", sans-serif;
+   margin: 0 38px;
+}
+
+/* Nav */
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav img{
+   height: 70px;
+   margin-top: 20px;
+   margin-left: 20px;
+}
+
+nav ul{
+   list-style: none;
+   display: flex;
+   margin-top: 10px;
+}
+
+nav li{
+   margin: 0 15px;
+   block-size: 100%;
+}
+
+nav a{
+   padding-top: 30px;
+}
+nav ul a:hover{
+   color:#0065FC;
+   border-top: 3px solid #0065FC;
+}
+
+/* Main */ 
+
+.search{
+   font-size: 70%;
+}
+
+.search h2{
+   font-weight:normal;
+}
+
+.filter{
+   display: flex;
+   align-items: center;
+}
+
+.filter ul{
+   list-style: none;
+   display: flex;
+}
+
+.filter li{
+   margin: 0 15px;
+   block-size: 100%;
+   border: 2px solid #F2F2F2;
+   padding: 2px 15px;
+   border-radius: 40px ;
+}
+
+i{
+   color:#0065FC;
+   margin: 4px 8px 4px 0px;
+}
+.filter h1{
+   font-size: 150%
+}
