@@ -29,9 +29,9 @@ nav li{
 }
 
 nav a{
-   padding-top: 30px;
+   padding: 30px 15px 0;
 }
-nav ul a:hover{
+nav a:hover{
    color:#0065FC;
    border-top: 3px solid #0065FC;
 }
