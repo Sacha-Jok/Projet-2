@@ -1,8 +1,11 @@
 body{
    font-family: "Raleway", sans-serif;
-   margin: 0 38px;
+   padding: 0 38px;
 }
 
+.bold{
+   font-weight: bold;
+}
 /* Nav */
 
 nav{
@@ -12,9 +15,10 @@ nav{
 }
 
 nav img{
-   height: 70px;
-   margin-top: 20px;
-   margin-left: 20px;
+   height: 50px;
+   margin-top: 50px;
+   margin-left: 30px;
+   margin-bottom: 30px;
 }
 
 nav ul{
@@ -29,21 +33,33 @@ nav li{
 }
 
 nav a{
-   padding: 30px 15px 0;
+   color: black;
+   padding: 59px 25px 0;
+   text-decoration: none;
+   font-weight: 500;
 }
 nav a:hover{
    color:#0065FC;
-   border-top: 3px solid #0065FC;
+   border-top: 2px solid #0065FC;
 }
 
 /* Main */ 
 
-.search{
-   font-size: 70%;
+   /*Search*/
+
+.search h1{
+   font-size: 22px;
 }
 
 .search h2{
    font-weight:normal;
+   font-size: 17px;
+}
+
+   /*Filter*/
+
+.filter h1{
+   font-size: 150%
 }
 
 .filter{
@@ -57,17 +73,177 @@ nav a:hover{
 }
 
 .filter li{
-   margin: 0 15px;
+   margin: 0 10px;
    block-size: 100%;
-   border: 2px solid #F2F2F2;
-   padding: 2px 15px;
+   border: 3px solid #d9d9d9;
    border-radius: 40px ;
+   font-weight: bold;
+   text-align: center;
+   vertical-align: middle;
 }
 
-i{
+.filter i{
    color:#0065FC;
-   margin: 4px 8px 4px 0px;
+   background-color: #DEEBFF;
+   padding: 10px;
+   width: 16px;
+   margin-right: 8px;
+   border-radius: 25px;
+   object-fit: none;
+   transition: 0.5s;
 }
-.filter h1{
-   font-size: 150%
+
+.filter a{
+   display: block;
+   color: black;
+   padding-right: 12px;
+   border-radius: 25px;
+   text-decoration: none;
+   transition: 0.5s;
+}
+
+.filter a:hover {
+   background-color:#0065FC;
+   color: #DEEBFF;
+}
+
+.filter a:hover i {
+   background-color:#0065FC;
+   color: #DEEBFF;
+
+}
+
+   /*Filter-sub*/
+
+.filter-sub{
+   margin: 30px 0;
+}
+.filter-sub i{
+   color:#0065FC;
+   padding: 4px;
+   width: 17px;
+   margin-right: 8px;
+   border: 3px solid #d9d9d9;
+   border-radius: 25px;
+   object-fit: contain;
+   text-align: center;
+}
+
+.filter-sub h2{
+   font-weight:normal;
+   font-size: 17px;
+}
+
+   /*Place*/
+
+.place{
+   background-color: #f2f2f2;
+   width: 1005px;
+   padding: 40px ;
+   border-radius: 25px;
+   margin-bottom:40px;
+}
+
+.place h2{
+   margin-top: 10px;
+   margin-bottom: 20px;
+}
+
+.place h4{
+   margin: 0;
+   text-decoration: none;
+   width: 100px;
+}
+
+.place h4:hover{
+   color: #0065FC;
+}
+
+.place-bubble{
+   display: flex;
+   align-items: center;
+}
+
+.place-bubble img{
+   border-radius: 25px 25px 0 0;
+   object-fit: cover;
+   width: 300px;
+   height: 150px;
+}
+
+.place-bubble a{
+   color: black;
+   text-decoration: none;
+}
+
+.place-bubble-1{
+   border: 4px solid white;
+   border-radius: 25px;
+   box-shadow: 40px 40px 80px rgba(0, 0, 0, 0.2);
+   background-color: white;
+   width: 300px;
+   margin-right: 40px;
+   margin-bottom: 40px;
+}
+
+.place-bubble-1 h3,.place-bubble-1 p{
+   margin: 5px 0 5px 15px;
+}
+
+.stars{
+   margin-left: 15px;
+   margin-bottom: 5px;
+   color: #d9d9d9;
+}
+
+.blue{
+   color: #0065FC;
+}
+   
+   /*Popular*/
+
+.popular{
+      background-color: #f2f2f2;
+      width: 500px;
+      padding: 40px ;
+      border-radius: 25px;
+}
+
+.popular-title{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.popular h2, .popular i{
+   margin: 0;
+   margin-bottom: 20px;
+}
+
+.popular-bubble-1 h3,.popular-bubble-1 p{
+   margin: 5px 0 5px 15px;
+}
+
+.popular-bubble img{
+   border-radius: 25px 0 0 25px;
+   object-fit: cover;
+   width: 150px;
+   height: 150px;
+}
+
+.popular a{
+   color: black;
+   text-decoration: none;
+   display: flex;
+
+}
+
+.popular-bubble-1{
+   border: 4px solid white;
+   border-radius: 25px;
+   box-shadow: 40px 40px 80px rgba(0, 0, 0, 0.2);
+   background-color: white;
+   width: 500px;
+   margin-right: 40px;
+   margin-bottom: 40px;
 }
