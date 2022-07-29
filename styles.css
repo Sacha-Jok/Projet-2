@@ -59,7 +59,7 @@ nav a:hover{
    /*Filter*/
 
 .filter h1{
-   font-size: 150%
+   font-size: 125%
 }
 
 .filter{
@@ -74,19 +74,19 @@ nav a:hover{
 
 .filter li{
    margin: 0 10px;
-   block-size: 100%;
-   border: 3px solid #d9d9d9;
+   border: 2px solid #d9d9d9;
    border-radius: 40px ;
    font-weight: bold;
    text-align: center;
    vertical-align: middle;
+   font-size: larger;
 }
 
 .filter i{
    color:#0065FC;
    background-color: #DEEBFF;
-   padding: 10px;
-   width: 16px;
+   padding: 12px;
+   width: 20px;
    margin-right: 8px;
    border-radius: 25px;
    object-fit: none;
@@ -133,6 +133,13 @@ nav a:hover{
    font-weight:normal;
    font-size: 17px;
 }
+   
+   /*Bloc-1*/
+
+.bloc-1{
+   display: flex;
+   align-items: start;
+}
 
    /*Place*/
 
@@ -142,11 +149,12 @@ nav a:hover{
    padding: 40px ;
    border-radius: 25px;
    margin-bottom:40px;
+   margin-right: 40px;
 }
 
 .place h2{
-   margin-top: 10px;
-   margin-bottom: 20px;
+   margin: 0;
+   margin-bottom: 30px;
 }
 
 .place h4{
@@ -187,13 +195,14 @@ nav a:hover{
 }
 
 .place-bubble-1 h3,.place-bubble-1 p{
-   margin: 5px 0 5px 15px;
+   padding: 5px 15px;
+   margin: 0;
 }
 
-.stars{
-   margin-left: 15px;
-   margin-bottom: 5px;
+.place .stars{
+   padding: 5px 15px;
    color: #d9d9d9;
+   font-size: smaller;
 }
 
 .blue{
@@ -204,7 +213,7 @@ nav a:hover{
 
 .popular{
       background-color: #f2f2f2;
-      width: 500px;
+      width: 385px;
       padding: 40px ;
       border-radius: 25px;
 }
@@ -213,15 +222,20 @@ nav a:hover{
    display: flex;
    align-items: center;
    justify-content: space-between;
+   margin: 0;
+   margin-bottom: 30px;
 }
 
-.popular h2, .popular i{
+.popular-title h2{
    margin: 0;
-   margin-bottom: 20px;
+}
+
+.popular-title i{
+   font-size: 25px;
 }
 
 .popular-bubble-1 h3,.popular-bubble-1 p{
-   margin: 5px 0 5px 15px;
+   margin: 5px 15px;
 }
 
 .popular-bubble img{
@@ -243,7 +257,21 @@ nav a:hover{
    border-radius: 25px;
    box-shadow: 40px 40px 80px rgba(0, 0, 0, 0.2);
    background-color: white;
-   width: 500px;
-   margin-right: 40px;
+   width: 375px;
    margin-bottom: 40px;
+   position: relative;
+}
+
+.popular-bubble-txt{
+   display: block;
+   padding: 10px 0;
+   max-width: 200px;
+}
+
+.popular-bubble-1 .stars{
+   margin-left: 15px;
+   color: #d9d9d9;
+   font-size: smaller;
+   position: absolute;
+   bottom: 10px;
 }
