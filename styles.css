@@ -56,15 +56,57 @@ nav a:hover{
    font-size: 17px;
 }
 
+form{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.search-bar i{
+   display: flex;
+   color: black;
+   background-color: #f2f2f2;
+   padding: 13px;
+   width: 22px;
+   font-size: larger;
+   border-radius: 15px 0 0 15px;
+   justify-content: center;
+   align-items: center;
+}
+
+.search-bar input[type=search]{
+   font-size: large;
+   font-family: "Raleway", sans-serif;
+   font-weight: bold;
+   border-top: 1px solid #f2f2f2;
+   border-bottom: 1px solid #f2f2f2;
+   border-left: none;
+   border-right: none;
+   padding: 13px;
+}
+
+.search-bar input[type=submit]{
+   font-size: large;
+   font-family: "Raleway", sans-serif;
+   font-weight: bold;
+   background-color: #0065FC;
+   color: white;
+   padding: 13px;
+   border-radius: 0 15px 15px 0;
+   border: none;
+   
+
+}
+
    /*Filter*/
 
 .filter h1{
-   font-size: 125%
+   font-size: larger;
 }
 
 .filter{
    display: flex;
    align-items: center;
+   margin-top: 15px;
 }
 
 .filter ul{
@@ -89,7 +131,6 @@ nav a:hover{
    width: 20px;
    margin-right: 8px;
    border-radius: 25px;
-   object-fit: none;
    transition: 0.5s;
 }
 
@@ -116,7 +157,8 @@ nav a:hover{
    /*Filter-sub*/
 
 .filter-sub{
-   margin: 30px 0;
+   margin-top: 15px;
+   margin-bottom: 30px;
 }
 .filter-sub i{
    color:#0065FC;
@@ -220,7 +262,7 @@ nav a:hover{
 .popular{
    background-color: #f2f2f2;
    width: 385px;
-   padding: 40px 40px 10px 40px ;
+   padding: 40px 40px 15px 40px ;
    border-radius: 20px;
 }
 
