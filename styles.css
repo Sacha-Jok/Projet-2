@@ -1,6 +1,6 @@
 body{
    font-family: "Raleway", sans-serif;
-   padding: 0 35px;
+   margin: 0 35px;
 }
 
 .bold{
@@ -34,7 +34,7 @@ nav li{
 
 nav a{
    color: black;
-   padding: 59px 25px 0;
+   padding: 51px 25px 0;
    text-decoration: none;
    font-weight: 500;
 }
@@ -61,7 +61,7 @@ form{
    flex-wrap: wrap;
 }
 
-.search-bar i{
+#location{
    display: flex;
    color: black;
    background-color: #f2f2f2;
@@ -84,6 +84,10 @@ form{
    padding: 13px;
 }
 
+.search-bar input:focus{
+   outline: none;
+}
+
 .search-bar input[type=submit]{
    font-size: large;
    font-family: "Raleway", sans-serif;
@@ -93,25 +97,31 @@ form{
    padding: 13px;
    border-radius: 0 15px 15px 0;
    border: none;
-   
+}
 
+.search-bar button{
+   display: none;
 }
 
    /*Filter*/
 
 .filter h1{
    font-size: larger;
+   margin: 15px;
 }
 
 .filter{
    display: flex;
+   flex-wrap: wrap;
    align-items: center;
-   margin-top: 15px;
+   margin-top: 30px;
 }
 
 .filter ul{
    list-style: none;
    display: flex;
+   margin: 0;
+   padding: 0;
 }
 
 .filter li{
@@ -120,7 +130,6 @@ form{
    border-radius: 40px ;
    font-weight: bold;
    text-align: center;
-   vertical-align: middle;
    font-size: larger;
 }
 
@@ -337,8 +346,8 @@ form{
    flex-direction: column;
    flex-wrap: wrap;
    height: 455px;
-   width: 680px;
-   margin-bottom: 40px;
+   width: 100%;
+   margin-bottom: 50px;
    justify-content: center;
 }
 
@@ -425,4 +434,274 @@ form{
    padding: 12px 15px 15px 15px;
    margin: 0;
    font-size: medium;
+}
+
+   /*Footer*/
+
+.bloc-3{
+   display: flex;
+   padding: 40px 0 40px 80px;
+   margin: 0 -40px;
+   background-color: #f2f2f2;
+   width: 100%;
+}
+
+.bloc-3 div{
+   font-size: large;
+}
+
+.col-1, .col-2{
+   margin-right: 300px;
+}
+
+.col-3{
+   margin-right: 80px;
+}
+.bloc-3 a{
+   text-decoration: none;
+   color: black;
+}
+
+.bloc-3 p:hover{
+   color: #0065FC;
+}
+
+@media all and (max-width: 768px) 
+{
+   body{
+      width: auto;
+      margin: 0;
+   }
+   
+   nav{
+      flex-direction: column;
+   }
+   
+   nav img{
+      margin: 20px 0;
+   }
+   nav li {
+      display: flex;
+      margin: 0;
+      width: 50%;
+   }
+   
+   nav ul{
+      padding: 0;
+      margin: 0;
+      padding-bottom: 10px;
+      width: 100%;
+      justify-content: center;
+   }
+   
+   nav a{
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      width: 100%;
+      border-bottom: 3px solid #f9f9f9;
+   }
+   
+   nav a:hover{
+      border-top: none;
+      border-bottom: 3px solid #0065FC;
+   }   
+
+   .bloc-0{
+      margin: 0 15px;
+   }
+
+   .search{
+      margin: 0 15px;
+   }
+
+   .search-bar input[type=submit]{
+      display: none;
+   }
+
+   .search-bar button{
+      display: flex;
+      width: 50px;
+      height: 50px;
+      color: white;
+      background-color: #0065FC;
+      font-size: larger;
+      border-radius: 15px;
+      justify-content: center;
+      align-items: center;
+      border: none;
+
+   }
+
+   .search-bar button i{
+      padding: 13px;
+      width: 22px;
+   }
+
+   .filter{
+      flex-direction: column;
+      align-items: baseline;
+   }
+   
+   .filter ul{
+      flex-direction: column;
+      padding: 0;
+   }
+
+   .filter li{
+      margin: 0;
+      margin-bottom: 10px;
+      text-align: left;
+   }
+
+   .filter i{
+      text-align: center;
+   }
+
+   .bloc-1{
+      flex-direction: column-reverse;
+      width: 100%;
+   }
+
+   .popular{
+      border-radius: 0;
+      width: 100%;
+      padding: 0;
+   }
+
+   .popular-bubble-1 {
+      width: 85%;
+      margin: 0 20px 10px 20px;
+   }
+
+   .popular h2{
+      margin-left: 20px;
+   }
+
+   .popular-title i{
+      margin-right: 20px;
+   }
+
+   .popular-title{
+      margin: 20px 0;
+   }
+
+   .place{
+      background-color: white;
+      padding:0 ;
+      width: 100%;
+      border-radius: 20px;
+      margin-bottom:40px;
+      margin-right: 40px;
+   }
+
+   .place h2{
+      margin-left: 30px;
+      margin-top: 30px;
+   }
+
+   .place-bubble{
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      width: 100%;
+   }
+
+   .place-bubble-1 img{
+      width: 100%;
+      object-fit: cover;
+      object-position: bottom;
+   }
+
+   #amina{
+      width: 100%;
+      object-fit: cover;
+      object-position: 0 60%;
+   }
+
+   .place-bubble-1{
+      margin: 0 20px 10px 20px;
+      width: 88%;
+   }
+
+   .place h4{
+      margin-top: 20px;
+      margin-left: 20px;
+   }
+
+   .bloc-2{
+      width: 100%;
+   }
+
+   .activity{
+      width: 100%;
+   }
+   .activity h2{
+      margin-left: 30px;
+   }
+
+
+   .activity-bubble{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      width: 100%;
+   }
+
+   .activity-bubble-1{
+      margin: 0 20px 10px 20px;
+      width: 88%;
+      height: 204px;
+   }
+
+   .activity-bubble-2{
+      margin: 0 20px 10px 20px;
+      width: 88%;
+      height: 204px;
+   }
+
+   .activity-bubble-3{
+      margin: 0 20px 10px 20px;
+      width: 88%;
+      height: 204px;
+   }
+
+   .activity-bubble-4{
+      margin: 0 20px 10px 20px;
+      width: 88%;
+      height: 204px;
+   }
+
+   .activity-bubble-5{
+      margin: 0 20px 10px 20px;
+      width: 88%;
+      height: 204px;
+   }
+
+   .activity-bubble img{
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      position: relative;
+   }
+
+   .activity-bubble h3{
+      padding: 12px 15px 15px 15px;
+      margin: 0;
+      font-size: medium;
+      position: absolute;
+      object-position: bottom;
+   }
+
+
+   .bloc-3{
+      display: flex;
+      flex-direction: column;
+      background-color: #f2f2f2;
+      margin: 0;
+   }
+
+   .col-1, .col-2{
+      margin-right: 0;
+   }
 }
