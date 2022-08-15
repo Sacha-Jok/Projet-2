@@ -469,6 +469,147 @@ form{
    color: #0065FC;
 }
 
+@media all and (max-width: 992px) 
+{
+   body{
+      width: auto;
+      margin: 0;
+   }
+
+   .bloc-0{
+      margin: 0 30px;
+   }
+   
+   .bloc-1{
+      flex-direction: column;
+      width: 100%;
+   }
+
+   .filter li{
+      margin: 0;
+      margin-bottom: 10px;
+      margin-right: 15px ;
+      text-align: left;
+   }
+
+   .place{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 40px;
+      border-radius: 0;
+   }
+   
+   .place-display{
+      display: flex;
+      flex-direction: row;
+   }
+   
+   .place-bubble{
+      flex-direction: column;
+      width: 100%;
+   }
+   
+   .place-bubble-1 img{
+      width: 100%;
+   }
+
+   .place-bubble-1 {
+      width: 88%;
+      margin: 0 20px 40px 20px;
+   }
+
+   .place h2{
+      margin-top: 30px;
+      margin-left: 30px;
+   }
+
+   .place h4{
+      margin: 0px 0 30px 30px;
+   }
+
+   .popular{
+      width: 100%;
+      padding: 0;
+      border-radius: 0;
+   }
+
+   .popular-title{
+      margin: 30px;
+   }
+
+   .popular-bubble{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+   }
+
+   .popular-bubble-1 {
+      margin-left:   30px;
+      margin-bottom: 30px;
+   }
+
+   .bloc-2{
+      padding: 0;
+      margin: 0;
+   }
+
+   .activity{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+   }
+
+   .activity h2{
+      margin: 30px;
+   }
+   
+   .activity-bubble{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      height: auto;
+   }
+
+   .activity-bubble-1, .activity-bubble-2, .activity-bubble-3, .activity-bubble-4, .activity-bubble-5{
+      border-radius: 20px;
+      box-shadow: 40px 40px 80px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      height: 250px;
+      margin: 0 20px 40px 20px;
+
+   }
+
+   .activity-bubble img{
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+      object-fit: cover;
+      height: 200px;
+   }
+
+   .bloc-3{
+      display: flex;
+      justify-content: space-between;
+      background-color: #f2f2f2;
+      width: 100%;
+      margin: 0;
+      padding: 0 0 40px 40px;
+   }
+
+   .bloc-3 h3{
+      padding-top: 40px;
+   }
+
+   .col-1, .col-2, .col-3{
+      padding-left: 20px;
+      margin-right: 0;
+      width: 88%;
+   }
+
+
+}
+
 @media all and (max-width: 768px) 
 {
    body{
@@ -590,7 +731,8 @@ form{
    }
 
    .popular-title{
-      margin: 20px 0;
+      margin: 30px 0;
+      align-items: center;
    }
 
    .place{
@@ -598,7 +740,7 @@ form{
       padding:0 ;
       width: 100%;
       border-radius: 20px;
-      margin-bottom:40px;
+      margin-bottom:0;
       margin-right: 40px;
    }
 
@@ -610,10 +752,14 @@ form{
    .place-bubble{
       display: flex;
       flex-direction: column;
-      align-items: center;
       width: 100%;
    }
 
+   .place-display{
+      display: flex;
+      flex-direction: column;
+   }
+   
    .place-bubble-1 img{
       width: 100%;
       object-fit: cover;
@@ -630,6 +776,7 @@ form{
       margin: 0;
       margin-bottom: 15px;
       width: 88%;
+
    }
 
    .place h4{
@@ -645,7 +792,8 @@ form{
       width: 100%;
    }
    .activity h2{
-      margin-left: 30px;
+      margin: 30px;
+
    }
 
    .activity-bubble{
@@ -654,12 +802,14 @@ form{
       align-items: center;
       height: auto;
       width: 100%;
+      margin-bottom: 0;
    }
 
    .activity-bubble-1, .activity-bubble-2, .activity-bubble-3, .activity-bubble-4, .activity-bubble-5{
-      width: 100%;
+      width: 88%;
       height: 204px;
       margin: 0;
+      margin-bottom: 15px;
    }
 
    .activity-bubble a{
@@ -678,8 +828,6 @@ form{
       padding: 12px 15px 15px 15px;
       margin: 0;
       font-size: medium;
-      position: absolute;
-      object-position: bottom;
    }
 
 
