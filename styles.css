@@ -1,6 +1,7 @@
 body{
    font-family: "Raleway", sans-serif;
-   margin: 0 35px;
+   margin: 0;
+   width: auto;
 }
 
 .bold{
@@ -45,6 +46,12 @@ nav a:hover{
 
 /* Main */ 
 
+   /*Bloc-0*/
+
+.bloc-0{
+   margin-left: 40px;
+   block-size: min-content;
+}
    /*Search*/
 
 .search h1{
@@ -190,7 +197,10 @@ form{
 
 .bloc-1{
    display: flex;
+   flex-wrap: wrap;
    align-items: start;
+   margin-left: 40px;
+   width: auto;
 }
 
    /*Place*/
@@ -334,12 +344,21 @@ form{
    bottom: 10px;
 }
 
+   /*Bloc-2*/
+
+.bloc-2{
+   margin-left: 40px;
+}
+
+.bloc-2 h2{
+   margin: 40px 0;
+}
    /* Activity */
 
 .activity{
-   width: 1590px;
    border-radius: 20px;
-   margin-bottom:40px;
+   display: flex;
+   flex-wrap: wrap;
 }
 
 .activity-bubble{
@@ -347,9 +366,9 @@ form{
    flex-direction: column;
    flex-wrap: wrap;
    height: 455px;
-   width: 100%;
-   margin-bottom: 50px;
-   justify-content: center;
+   width: 774px;
+   margin-bottom: 40px;
+   margin-right: 40px;
 }
 
 .activity-bubble >*, .activity-bubble img{
@@ -361,6 +380,7 @@ form{
    border-radius: 20px;
    box-shadow: 40px 40px 80px rgba(0, 0, 0, 0.2);
    background-color: white;
+   margin-right: 40px;
 }
 
 .activity-bubble-2{
@@ -438,10 +458,9 @@ form{
 
 .bloc-3{
    display: flex;
-   padding: 40px 0 40px 80px;
-   margin: 0 -40px;
+   padding: 40px 0 40px 40px;
+   margin: 0;
    background-color: #f2f2f2;
-   width: 100%;
 }
 
 .bloc-3 div{
@@ -456,8 +475,13 @@ form{
    margin-right: 80px;
 }
 
+.bloc-3 h3{
+   margin: 0;
+}
+
 .bloc-3 p{
    display: table;
+   margin-top: 20px;
 }
 
 .bloc-3 a{
@@ -469,6 +493,9 @@ form{
    color: #0065FC;
 }
 
+.footer{
+   width: auto;
+}
 /* Responsive tablette */
 
 @media all and (max-width: 992px) 
@@ -477,14 +504,11 @@ form{
       width: auto;
       margin: 0;
    }
-
-   .bloc-0{
-      margin: 0 30px;
-   }
    
    .bloc-1{
       flex-direction: column-reverse;
       width: 100%;
+      margin: 0;
    }
 
    .filter li{
@@ -592,17 +616,16 @@ form{
 
    .bloc-3{
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       background-color: #f2f2f2;
-      width: 100%;
       margin: 0;
-      padding: 0 0 40px 40px;
+      padding: 0;
    }
 
    .col-1, .col-2, .col-3{
-      padding-left: 20px;
-      margin-right: 0;
-      width: 88%;
+      margin-right: 40px;
+      margin-top: 40px;
+      width: auto;
    }
 
 
@@ -835,7 +858,6 @@ form{
       display: flex;
       flex-direction: column;
       background-color: #f2f2f2;
-      width: 100%;
       margin: 0;
       padding: 0;
    }
