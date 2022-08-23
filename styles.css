@@ -1,3 +1,7 @@
+*{
+   scroll-behavior: smooth;
+}
+
 body{
    font-family: "Raleway", sans-serif;
    margin: 0;
@@ -468,7 +472,7 @@ form{
 }
 
 .col-1, .col-2{
-   margin-right: 300px;
+   margin-right: 20%;
 }
 
 .col-3{
@@ -481,7 +485,6 @@ form{
 
 .bloc-3 p{
    display: table;
-   margin-top: 20px;
 }
 
 .bloc-3 a{
@@ -491,6 +494,7 @@ form{
 
 .bloc-3 p:hover{
    color: #0065FC;
+   cursor: pointer;
 }
 
 .footer{
