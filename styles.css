@@ -17,6 +17,7 @@ nav{
    display: flex;
    justify-content: space-between;
    align-items: center;
+   width: 1630px;
 }
 
 nav img{
@@ -53,7 +54,7 @@ nav a:hover{
    /*Bloc-0*/
 
 .bloc-0{
-   margin-left: 40px;
+   margin: 0 40px;
    block-size: min-content;
 }
    /*Search*/
@@ -203,8 +204,8 @@ form{
    display: flex;
    flex-wrap: wrap;
    align-items: start;
-   margin-left: 40px;
-   width: auto;
+   margin: 0 40px;
+   width: fit-content;
 }
 
    /*Place*/
@@ -286,7 +287,7 @@ form{
 .popular{
    background-color: #f2f2f2;
    width: 385px;
-   padding: 40px 40px 15px 40px ;
+   padding: 40px 40px 10px 40px ;
    border-radius: 20px;
 }
 
@@ -351,7 +352,8 @@ form{
    /*Bloc-2*/
 
 .bloc-2{
-   margin-left: 40px;
+   margin: 0 40px;
+   width: fit-content;
 }
 
 .bloc-2 h2{
@@ -515,6 +517,10 @@ form{
       margin: 0;
    }
 
+   nav{
+      width: auto;
+   }
+
    .filter li{
       margin: 0;
       margin-bottom: 10px;
@@ -574,9 +580,16 @@ form{
       flex-direction: row;
    }
 
+   .popular-bubble img{
+      width: 300px;
+   }
+
    .popular-bubble-1 {
       margin-left:   30px;
+      margin-right: 30px;
       margin-bottom: 30px;
+      width: 100%;
+
    }
 
    .bloc-2{
@@ -586,20 +599,24 @@ form{
 
    .activity{
       width: 100%;
-      display: flex;
-      flex-wrap: wrap;
       margin: 0;
+      flex-wrap: nowrap;
    }
 
-   .activity h2{
-      margin: 30px;
+   .bloc-2 h2{
+      margin: 0;
+      margin-left: 30px;
+      margin-bottom: 30px;
    }
    
    .activity-bubble{
+      width: 50%;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
       height: auto;
+      margin: 0;
+      justify-content: center;   
    }
 
    .activity-bubble-1, .activity-bubble-2, .activity-bubble-3, .activity-bubble-4, .activity-bubble-5{
@@ -762,6 +779,9 @@ form{
       align-items: center;
    }
 
+   .popular-bubble img{
+      width: 150px;
+   }
    .place{
       background-color: white;
       padding:0 ;
@@ -817,10 +837,11 @@ form{
 
    .activity{
       width: 100%;
+      flex-wrap: wrap;
    }
-   .activity h2{
-      margin: 30px;
 
+   .bloc-2 h2{
+      margin: 30px;
    }
 
    .activity-bubble{
@@ -829,7 +850,7 @@ form{
       align-items: center;
       height: auto;
       width: 100%;
-      margin-bottom: 0;
+      margin: 0;
    }
 
    .activity-bubble-1, .activity-bubble-2, .activity-bubble-3, .activity-bubble-4, .activity-bubble-5{
