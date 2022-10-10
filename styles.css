@@ -251,6 +251,7 @@ form{
 .place-bubble-1 h3,.place-bubble-1 p{
    padding: 3px 15px;
    margin: 0;
+   font-size: medium;
 }
 
 .place .stars{
@@ -307,6 +308,7 @@ form{
 
 .popular-bubble-1 h3,.popular-bubble-1 p{
    margin: 5px 15px;
+   font-size: medium;
 }
 
 .popular-bubble img{
@@ -469,7 +471,7 @@ form{
 }
 
 .bloc-3 div{
-   font-size: large;
+   font-size: medium;
 }
 
 .col-1, .col-2{
@@ -503,7 +505,8 @@ form{
 }
 
 /* Breakpoint */
-@media all and (max-width: 1478px)
+
+@media all and (max-width: 1358px)
 {
    .bloc-1{
       flex-wrap: wrap;
